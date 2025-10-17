@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>육아 커뮤니티 · SNOVAHA</title>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        .community-hero {
+            padding: 120px 24px 80px;
+            text-align: center;
+            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+        }
+        .community-hero h1 {
+            font-size: 56px;
+            font-weight: 800;
+            margin-bottom: 20px;
+            color: var(--text-primary);
+        }
+        .community-hero p {
+            font-size: 20px;
+            color: var(--text-secondary);
+        }
+        .community-content {
+            max-width: 1000px;
+            margin: 80px auto;
+            padding: 0 24px;
+        }
+        .coming-soon {
+            background: var(--surface);
+            border-radius: 24px;
+            padding: 80px 40px;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+        }
+        .coming-soon-icon {
+            font-size: 80px;
+            margin-bottom: 24px;
+        }
+        .coming-soon h2 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--text-primary);
+        }
+        .coming-soon p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            margin-bottom: 32px;
+            line-height: 1.7;
+        }
+        .features-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+            margin-top: 48px;
+            text-align: left;
+        }
+        .feature-preview {
+            background: var(--bg);
+            padding: 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+        }
+        .feature-preview h3 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--text-primary);
+        }
+        .feature-preview p {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin: 0;
+        }
+        .notify-form {
+            max-width: 400px;
+            margin: 40px auto 0;
+            display: flex;
+            gap: 12px;
+        }
+        .notify-form input {
+            flex: 1;
+            padding: 14px 20px;
+            border: 1.5px solid var(--border);
+            border-radius: 12px;
+            font-size: 15px;
+            font-family: 'Pretendard', sans-serif;
+        }
+        .notify-form input:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        .notify-form button {
+            padding: 14px 24px;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            font-family: 'Pretendard', sans-serif;
+            transition: var(--transition);
+        }
+        .notify-form button:hover {
+            background: var(--primary-hover);
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero -->
+    <section class="community-hero">
+        <h1>💬 육아 커뮤니티</h1>
+        <p>같은 고민을 나누는 부모들과 함께하는 공간</p>
+    </section>
+
+    <!-- Content -->
+    <div class="community-content">
+        <div class="coming-soon">
+            <div class="coming-soon-icon">🚀</div>
+            <h2>곧 오픈합니다!</h2>
+            <p>
+                SNOVAHA 육아 커뮤니티가 준비 중입니다.<br>
+                부모님들이 자유롭게 소통하고, 정보를 나누고, 서로 응원할 수 있는<br>
+                따뜻한 공간을 만들고 있습니다.
+            </p>
+
+            <div class="features-preview">
+                <div class="feature-preview">
+                    <h3>📝 자유 게시판</h3>
+                    <p>육아 고민, 경험담, 꿀팁을 자유롭게 나눠보세요</p>
+                </div>
+                <div class="feature-preview">
+                    <h3>❓ 질문/답변</h3>
+                    <p>궁금한 점을 물어보고 다른 부모님들의 조언을 받아보세요</p>
+                </div>
+                <div class="feature-preview">
+                    <h3>📸 육아 사진첩</h3>
+                    <p>우리 아이의 소중한 순간을 함께 나눠요</p>
+                </div>
+                <div class="feature-preview">
+                    <h3>🎉 이벤트</h3>
+                    <p>육아 관련 이벤트와 혜택 정보를 공유해요</p>
+                </div>
+            </div>
+
+            <form class="notify-form" onsubmit="event.preventDefault(); alert('알림 신청이 완료되었습니다! 오픈 시 이메일로 안내드리겠습니다.');">
+                <input type="email" placeholder="이메일 주소" required>
+                <button type="submit">오픈 알림 받기</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>다른 서비스도 둘러보세요</h2>
+        <div class="cta-buttons">
+            <a href="/invitation/" class="btn primary">돌잔치 초대장</a>
+            <a href="/benefits/" class="btn outline">육아 혜택 보기</a>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>© 2025 SNOVAHA · all rights reserved</p>
+    </footer>
+</body>
+</html>
+

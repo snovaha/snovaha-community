@@ -3,168 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>육아 커뮤니티 · SNOVAHA</title>
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="stylesheet" href="home.css">
-    <style>
-        .community-hero {
-            padding: 120px 24px 80px;
-            text-align: center;
-            background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
-        }
-        .community-hero h1 {
-            font-size: 56px;
-            font-weight: 800;
-            margin-bottom: 20px;
-            color: var(--text-primary);
-        }
-        .community-hero p {
-            font-size: 20px;
-            color: var(--text-secondary);
-        }
-        .community-content {
-            max-width: 1000px;
-            margin: 80px auto;
-            padding: 0 24px;
-        }
-        .coming-soon {
-            background: var(--surface);
-            border-radius: 24px;
-            padding: 80px 40px;
-            text-align: center;
-            box-shadow: var(--shadow-md);
-        }
-        .coming-soon-icon {
-            font-size: 80px;
-            margin-bottom: 24px;
-        }
-        .coming-soon h2 {
-            font-size: 36px;
-            font-weight: 700;
-            margin-bottom: 16px;
-            color: var(--text-primary);
-        }
-        .coming-soon p {
-            font-size: 18px;
-            color: var(--text-secondary);
-            margin-bottom: 32px;
-            line-height: 1.7;
-        }
-        .features-preview {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 24px;
-            margin-top: 48px;
-            text-align: left;
-        }
-        .feature-preview {
-            background: var(--bg);
-            padding: 24px;
-            border-radius: 16px;
-            border: 1px solid var(--border);
-        }
-        .feature-preview h3 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: var(--text-primary);
-        }
-        .feature-preview p {
-            font-size: 14px;
-            color: var(--text-secondary);
-            margin: 0;
-        }
-        .notify-form {
-            max-width: 400px;
-            margin: 40px auto 0;
-            display: flex;
-            gap: 12px;
-        }
-        .notify-form input {
-            flex: 1;
-            padding: 14px 20px;
-            border: 1.5px solid var(--border);
-            border-radius: 12px;
-            font-size: 15px;
-            font-family: 'Pretendard', sans-serif;
-        }
-        .notify-form input:focus {
-            outline: none;
-            border-color: var(--primary);
-        }
-        .notify-form button {
-            padding: 14px 24px;
-            background: var(--primary);
-            color: white;
-            border: none;
-            border-radius: 12px;
-            font-weight: 600;
-            font-size: 15px;
-            cursor: pointer;
-            font-family: 'Pretendard', sans-serif;
-            transition: var(--transition);
-        }
-        .notify-form button:hover {
-            background: var(--primary-hover);
-        }
-    </style>
+    <meta name="description" content="SNOVAHA 커뮤니티 — 부모들의 이야기와 육아 팁이 모이는 곳. 오픈 준비 중이에요.">
+    <title>커뮤니티 — 함께 키워요 · SNOVAHA</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Hero -->
-    <section class="community-hero">
-        <h1>💬 육아 커뮤니티</h1>
-        <p>같은 고민을 나누는 부모들과 함께하는 공간</p>
-    </section>
+    <nav class="global-nav">
+        <a href="/" class="nav-logo">✦ SNOVAHA</a>
+        <a href="/" class="nav-back">홈으로 →</a>
+    </nav>
 
-    <!-- Content -->
-    <div class="community-content">
-        <div class="coming-soon">
-            <div class="coming-soon-icon">🚀</div>
-            <h2>곧 오픈합니다!</h2>
-            <p>
-                SNOVAHA 육아 커뮤니티가 준비 중입니다.<br>
-                부모님들이 자유롭게 소통하고, 정보를 나누고, 서로 응원할 수 있는<br>
-                따뜻한 공간을 만들고 있습니다.
-            </p>
+    <header class="hero">
+        <div class="hero-inner">
+            <span class="hero-eyebrow">💬 오픈 준비 중</span>
+            <h1>혼자 하는 육아는 없어요.<br><span class="accent">함께 키워요</span></h1>
+            <p class="sub">밤중 수유의 외로움도, 첫 걸음마의 벅참도.<br>나눌 수 있는 부모들의 공간을 준비하고 있어요.</p>
+        </div>
+    </header>
 
-            <div class="features-preview">
-                <div class="feature-preview">
-                    <h3>📝 자유 게시판</h3>
-                    <p>육아 고민, 경험담, 꿀팁을 자유롭게 나눠보세요</p>
+    <main class="content">
+        <!-- 준비 중인 기능 -->
+        <section class="roadmap">
+            <h2>이런 공간이 열릴 거예요</h2>
+            <div class="roadmap-grid">
+                <div class="rm-card">
+                    <div class="rm-icon">🌙</div>
+                    <h3>새벽 수유방</h3>
+                    <p>지금 이 시간에도 깨어 있는 부모들끼리 나누는 실시간 이야기</p>
+                    <span class="rm-tag">준비 중</span>
                 </div>
-                <div class="feature-preview">
-                    <h3>❓ 질문/답변</h3>
-                    <p>궁금한 점을 물어보고 다른 부모님들의 조언을 받아보세요</p>
+                <div class="rm-card">
+                    <div class="rm-icon">📈</div>
+                    <h3>성장 일기</h3>
+                    <p>우리 아이의 순간을 기록하고, 또래 발달 이야기를 나눠요</p>
+                    <span class="rm-tag">준비 중</span>
                 </div>
-                <div class="feature-preview">
-                    <h3>📸 육아 사진첩</h3>
-                    <p>우리 아이의 소중한 순간을 함께 나눠요</p>
+                <div class="rm-card">
+                    <div class="rm-icon">🙋</div>
+                    <h3>선배맘·선배파파 Q&A</h3>
+                    <p>겪어본 사람만 아는 답이 있어요. 묻고 답하는 공간</p>
+                    <span class="rm-tag">준비 중</span>
                 </div>
-                <div class="feature-preview">
-                    <h3>🎉 이벤트</h3>
-                    <p>육아 관련 이벤트와 혜택 정보를 공유해요</p>
+                <div class="rm-card">
+                    <div class="rm-icon">📍</div>
+                    <h3>동네 육아 메이트</h3>
+                    <p>같은 동네, 비슷한 개월수 아이를 키우는 이웃 찾기</p>
+                    <span class="rm-tag">준비 중</span>
                 </div>
             </div>
+        </section>
 
-            <form class="notify-form" onsubmit="event.preventDefault(); alert('알림 신청이 완료되었습니다! 오픈 시 이메일로 안내드리겠습니다.');">
-                <input type="email" placeholder="이메일 주소" required>
-                <button type="submit">오픈 알림 받기</button>
-            </form>
-        </div>
-    </div>
+        <!-- 그동안 볼 육아 팁 -->
+        <section class="tips">
+            <h2>기다리는 동안, 오늘의 육아 팁</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">😴</div>
+                    <h3>신생아 수면</h3>
+                    <p>낮과 밤 구분은 생후 6~8주부터 시작돼요. 낮에는 밝게, 밤에는 어둡고 조용하게 — 환경 차이가 수면 습관을 만들어요.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🍼</div>
+                    <h3>수유 간격</h3>
+                    <p>신생아는 보통 2~3시간마다 먹어요. 시계보다 아기의 배고픔 신호(입 오물거림, 손 빨기)를 먼저 봐주세요.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">💉</div>
+                    <h3>예방접종 일정</h3>
+                    <p>생후 12개월까지 접종이 가장 촘촘해요. 질병관리청 '예방접종도우미'에 등록하면 일정 알림을 받을 수 있어요.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🥣</div>
+                    <h3>이유식 시작</h3>
+                    <p>보통 생후 5~6개월, 아기가 목을 가누고 어른 먹는 것에 관심을 보이면 시작 신호예요. 쌀미음부터 한 가지씩.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🌡️</div>
+                    <h3>열이 날 때</h3>
+                    <p>생후 3개월 미만이 38°C 이상이면 바로 병원으로. 그 이후엔 아기 컨디션이 해열제만큼 중요한 판단 기준이에요.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🗣️</div>
+                    <h3>언어 발달</h3>
+                    <p>말을 못 알아들어도 계속 말을 걸어주세요. 생후 첫 1년의 '들은 말의 양'이 언어 발달의 밑거름이 돼요.</p>
+                </div>
+            </div>
+        </section>
 
-    <!-- CTA -->
-    <section class="cta">
-        <h2>다른 서비스도 둘러보세요</h2>
-        <div class="cta-buttons">
-            <a href="/invitation/" class="btn primary">돌잔치 초대장</a>
-            <a href="/benefits/" class="btn outline">육아 혜택 보기</a>
-        </div>
-    </section>
+        <!-- 다른 서비스 안내 -->
+        <section class="cta-section">
+            <h2>기다리는 동안 이건 어때요?</h2>
+            <div class="cta-buttons">
+                <a href="/nub-theory/" class="btn primary">👶 각도법으로 성별 예측</a>
+                <a href="/benefits/" class="btn outline">🎁 육아 혜택 챙기기</a>
+            </div>
+        </section>
+    </main>
 
     <footer class="site-footer">
-        <p>© 2025 SNOVAHA · all rights reserved</p>
+        <a href="/">SNOVAHA</a> — 임신부터 육아까지, 모든 순간을 함께합니다
     </footer>
+
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
-
